@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Editor · Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><b>Editor del portfolio</b><span id="status" class="status">Cargando…</span></div>
+  <div class="actions">
+    <label class="btn ghost" title="Abrir un site.json guardado">Abrir archivo<input type="file" id="open" accept="application/json,.json" hidden></label>
+    <button class="btn ghost" id="reset" title="Volver a la versión publicada">Descartar cambios</button>
+    <button class="btn primary" id="download">Descargar site.json</button>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="panel">
+    <nav class="tabs" id="tabs" role="tablist"></nav>
+    <div class="form" id="form"></div>
+  </aside>
+  <section class="preview">
+    <div class="preview-bar">
+      <span>Vista previa</span>
+      <div class="seg" id="widths">
+        <button data-w="100%" class="on">Escritorio</button>
+        <button data-w="420px">Celular</button>
+      </div>
+    </div>
+    <div class="frame-wrap"><iframe id="frame" src="../index.html" title="Vista previa del portfolio"></iframe></div>
+  </section>
+</div>
+
+<dialog id="draft">
+  <form method="dialog">
+    <h2>Tenés cambios sin descargar</h2>
+    <p>La última vez editaste el portfolio y no descargaste el archivo. ¿Querés seguir desde ahí?</p>
+    <div class="row-end"><button value="discard" class="btn ghost">Empezar de la versión publicada</button><button value="restore" class="btn primary">Recuperar mis cambios</button></div>
+  </form>
+</dialog>
+
+<script src="admin.js"></script>
+</body>
+</html>
