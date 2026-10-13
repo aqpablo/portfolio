@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Portfolio personal · Pablo · Nexus Consulting",
+    "title": "Portfolio personal - Pablo Aquino",
     "description": "Casos de estudio de consultoría en tecnología y gestión para pymes: apps a medida, integraciones y tableros.",
     "backLabel": "← Volver a los casos",
     "cardCta": "Ver caso completo"
@@ -57,9 +57,9 @@
     }
   },
   "hero": {
-    "title": "Portfolio *personal*",
+    "title": "Portfolio personal",
     "lede": "Consultoría en tecnología y gestión: apps a medida, integraciones y tableros para que el negocio se gestione con datos.",
-    "who": "Pablo · Ingeniero industrial\nNexus Consulting · Santa Fe, AR"
+    "who": "Pablo Aquino - Ingeniero industrial\n Santa Fe, Argentina"
   },
   "sections": [
     {
@@ -98,14 +98,13 @@
         },
         {
           "label": "Escala",
-          "value": "2 locales · 2.500 visitas/mes"
+          "value": "3 locales - 2.000 visitas/mes"
         }
       ],
       "chips": [
         "Análisis funcional",
-        "Gestión de requerimientos",
         "Gestión de proyecto",
-        "Testing",
+        "Capacitación y adopción",
         "Waitwhile",
         "ERP Tango"
       ],
@@ -117,22 +116,16 @@
             "items": [
               "Análisis funcional",
               "Gestión de proyecto",
-              "Capacitación y adopción"
-            ]
-          },
-          {
-            "label": "",
-            "items": [
+              "Capacitación y adopción",
               "Waitwhile",
-              "ERP Tango",
-              "QR"
+              "ERP Tango"
             ]
           }
         ],
         "summary": [
           {
             "label": "Cliente",
-            "value": "DepiExpress · cadena de centros de depilación"
+            "value": "DepiExpress - cadena de centros de depilación"
           },
           {
             "label": "Período",
@@ -140,7 +133,7 @@
           },
           {
             "label": "Escala",
-            "value": "2 locales · ~6 depiladoras · 1.000 a 2.500 visitas por mes"
+            "value": "3 locales - ~9 depiladoras - 1.500 a 2.500 visitas por mes"
           },
           {
             "label": "Rol",
@@ -148,7 +141,7 @@
           },
           {
             "label": "Partner",
-            "value": "Cipax · integración y desarrollo"
+            "value": "Cipax - integración y desarrollo"
           }
         ],
         "blocks": [
