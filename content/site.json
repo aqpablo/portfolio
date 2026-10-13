@@ -883,8 +883,16 @@
     }
   ],
   "work": [
+        {
+      "title": "Investigación y selección de aplicaciones",
+      "paragraphs": [
+        "Relevar la necesidad real, comparar las alternativas del mercado y recomendar la que resuelve el problema, sin pagar de más por funciones que nadie va a usar.",
+        "Para resolver una problemática puntual o para ordenar cómo la empresa administra sus datos."
+      ],
+      "chips": []
+    },
     {
-      "title": "Implementación de software",
+      "title": "Implementación de aplicaciones",
       "paragraphs": [
         "Poner una herramienta a funcionar de verdad: configurarla para la operación del cliente y capacitar al equipo que la va a usar todos los días.",
         "**Botta Volpatti** — Asana para el trabajo del equipo. **Questa Inmobiliaria** — Pipedrive. **DepiExpress** — DepiStock, una aplicación propia para el seguimiento de stock en los locales."
@@ -896,17 +904,9 @@
       ]
     },
     {
-      "title": "Investigación y selección de aplicaciones",
-      "paragraphs": [
-        "Relevar la necesidad real, comparar las alternativas del mercado y recomendar la que resuelve el problema, sin pagar de más por funciones que nadie va a usar.",
-        "Para resolver una problemática puntual o para ordenar cómo la empresa administra sus datos."
-      ],
-      "chips": []
-    },
-    {
       "title": "Descripción y mejora de procesos",
       "paragraphs": [
-        "Escribir cómo se trabaja hoy, repartir responsabilidades y definir puntos de control para mejorar la calidad, reducir errores y hacer más eficiente el trabajo.",
+        "Describir cómo se trabaja hoy, proponer nuevos flujos de trabajo, repartir responsabilidades y definir puntos críticos de control para mejorar la calidad, reducir errores y hacer más eficiente el trabajo.",
         "**Andra Urgat** — organización del equipo, responsabilidades y puntos de control de la empresa."
       ],
       "chips": []
@@ -914,8 +914,8 @@
     {
       "title": "Análisis de datos",
       "paragraphs": [
-        "Tomar los datos que el negocio ya genera y devolver un panorama que permita decidir.",
-        "**Fiambrería Ilusión** — pantallazo completo de sus ventas: ticket promedio, mix de producto, productos más vendidos, rentabilidades y rotación de stock."
+        "Tomar los datos que el negocio ya genera y devolver un panorama que permita tomar decisiones.",
+        "**Fiambrería Ilusión** — pantallazo completo de sus ventas: ticket promedio, mix de producto, productos más vendidos, rentabilidad y rotación de stock."
       ],
       "chips": []
     }
@@ -931,7 +931,7 @@
     },
     {
       "title": "Validar con datos",
-      "text": "Medir si funciona y descubrir lo que los datos muestran y nadie había pedido."
+      "text": "Medir si funciona y descubrir lo que los datos muestran y qué más se puede conseguir."
     },
     {
       "title": "Escalar",
@@ -939,23 +939,19 @@
     }
   ],
   "footer": {
-    "name": "Pablo · Nexus Consulting",
+    "name": "Pablo Aquino",
     "contacts": [
       {
-        "text": "pa.nexusconsulting@gmail.com",
-        "href": "mailto:pa.nexusconsulting@gmail.com"
+        "text": "E-mail: pablo311098@gmail.com",
+        "href": "mailto:pablo311098@gmail.com"
       },
       {
-        "text": "Santa Fe, Argentina",
-        "href": ""
+        "text": "LinkedIn: linkedin.com/in/pabloaquino98",
+        "href": "https://www.linkedin.com/in/pabloaquino98"
       },
       {
-        "text": "LinkedIn · a completar",
-        "href": ""
-      },
-      {
-        "text": "WhatsApp · a completar",
-        "href": ""
+        "text": "WhatsApp: +54 9 342 4070550",
+        "href": "https://wa.me/5493424070550"
       }
     ]
   }
