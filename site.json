@@ -1,0 +1,962 @@
+{
+  "meta": {
+    "title": "Portfolio personal - Pablo Aquino",
+    "description": "Casos de estudio de consultoría en tecnología y gestión para pymes: apps a medida, integraciones y tableros.",
+    "backLabel": "← Volver a los casos",
+    "cardCta": "Ver caso completo"
+  },
+  "theme": {
+    "light": {
+      "ground": "#EEF2E8",
+      "surface": "#FBFCF8",
+      "ink": "#1D261C",
+      "muted": "#5C6857",
+      "line": "#D5DDCB",
+      "tang": "#EE6A3C",
+      "tang-soft": "#FBE0D3",
+      "olive": "#55702F",
+      "olive-soft": "#DDE8CB",
+      "butter": "#F3D77A",
+      "butter-soft": "#F8EDC4",
+      "sky": "#6E9FC4",
+      "sky-soft": "#D9E7F1",
+      "chip": "#E4EBDA"
+    },
+    "dark": {
+      "ground": "#151A14",
+      "surface": "#1D241C",
+      "ink": "#E7EDE0",
+      "muted": "#A1AD9A",
+      "line": "#2F3A2D",
+      "tang": "#F2855C",
+      "tang-soft": "#3A241B",
+      "olive": "#9DBE6B",
+      "olive-soft": "#26321C",
+      "butter": "#E9CC6A",
+      "butter-soft": "#352E17",
+      "sky": "#8DB8DA",
+      "sky-soft": "#1C2A35",
+      "chip": "#263024"
+    },
+    "fonts": {
+      "display": {
+        "family": "Schibsted Grotesk",
+        "local": "Graphik",
+        "weights": "500;600;700;800"
+      },
+      "body": {
+        "family": "Instrument Sans",
+        "local": "",
+        "weights": "400;500;600"
+      },
+      "mono": {
+        "family": "Courier Prime",
+        "local": "American Typewriter",
+        "weights": "400;700"
+      }
+    }
+  },
+  "hero": {
+    "title": "Portfolio personal",
+    "lede": "Consultoría en tecnología y gestión: apps a medida, integraciones y tableros para que el negocio se gestione con datos.",
+    "who": "Pablo Aquino - Ingeniero industrial\n Santa Fe, Argentina"
+  },
+  "sections": [
+    {
+      "id": "cases",
+      "visible": true,
+      "title": "Casos de estudio",
+      "eyebrow": "2024 – 2026"
+    },
+    {
+      "id": "work",
+      "visible": true,
+      "title": "Otros trabajos",
+      "eyebrow": "Encargos más acotados"
+    },
+    {
+      "id": "method",
+      "visible": true,
+      "title": "Cómo trabajo"
+    }
+  ],
+  "cases": [
+    {
+      "id": "depiexpress",
+      "visible": true,
+      "tone": "tang",
+      "kind": "Experiencia de cliente → SaaS",
+      "title": "DepiExpress Fila Virtual",
+      "facts": [
+        {
+          "label": "Cliente",
+          "value": "DepiExpress"
+        },
+        {
+          "label": "Período",
+          "value": "2025 – hoy"
+        },
+        {
+          "label": "Escala",
+          "value": "3 locales - 2.000 visitas/mes"
+        }
+      ],
+      "chips": [
+        "Análisis funcional",
+        "Gestión de proyecto",
+        "Capacitación y adopción",
+        "Waitwhile",
+        "ERP Tango"
+      ],
+      "tldr": "Fila virtual por QR que empezó como mejora de experiencia, se integró al ERP para eliminar la carga manual y terminó convertida en un SaaS propio.",
+      "detail": {
+        "chipGroups": [
+          {
+            "label": "",
+            "items": [
+              "Análisis funcional",
+              "Gestión de proyecto",
+              "Capacitación y adopción",
+              "Waitwhile",
+              "ERP Tango"
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "label": "Cliente",
+            "value": "DepiExpress - cadena de centros de depilación"
+          },
+          {
+            "label": "Período",
+            "value": "Agosto 2025 – actualidad"
+          },
+          {
+            "label": "Escala",
+            "value": "3 locales - ~9 depiladoras - 1.500 a 2.500 visitas por mes"
+          },
+          {
+            "label": "Rol",
+            "value": "Analista funcional y responsable del proyecto. El software es de terceros: mi trabajo fue definir qué tenía que hacer, coordinar a quienes lo usan y lo construyen, y validar que funcionara"
+          },
+          {
+            "label": "Partner",
+            "value": "Cipax - integración y desarrollo"
+          }
+        ],
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "",
+            "intro": [
+              "El resultado: una fila virtual integrada al ERP, una base de datos comercial mucho más rica y accesible, y **ElQueSigue**, una aplicación propia que hoy Cipax comercializa como SaaS con Nexus como partner."
+            ],
+            "outro": [],
+            "lead": "DepiExpress atendía por orden de llegada sin fila ni turnos: el cliente le pedía a la cajera que lo anotara. En lugar de proponer un desarrollo, **busqué una herramienta que ya resolviera el problema**, la validé con datos reales y recién entonces construimos a medida."
+          },
+          {
+            "type": "beforeAfter",
+            "title": "El punto de partida",
+            "intro": [],
+            "outro": [],
+            "before": {
+              "title": "Antes",
+              "items": [
+                "Sin fila ni turnos: nadie sabía cuánto iba a esperar ni quién lo atendería.",
+                "Registro a mano por una persona ocupada atendiendo.",
+                "Carga manual de cada venta en Tango: 2-3 min × ~30 ventas/día.",
+                "Datos pobres sobre un negocio muy estacional."
+              ]
+            },
+            "after": {
+              "title": "Después",
+              "items": [
+                "Fila virtual por QR, con espera y profesional asignado en tiempo real.",
+                "Registro asistido para quien no usa celular.",
+                "Cada venta genera sola su pedido de facturación en Tango.",
+                "Recurrencia, tiempos, mix y demanda medidos."
+              ]
+            }
+          },
+          {
+            "type": "diagram",
+            "title": "Comprar antes de construir",
+            "intro": [
+              "Antes de proponer software a medida, busqué si el problema ya estaba resuelto en el mercado. Elegí **Waitwhile** y lo configuré a la operación real del negocio: servicios, depiladoras, horarios, límites de capacidad, precios y categorías. Pegamos los QR en los locales y el cliente pasó a sumarse solo a la fila, viendo cuánto le falta y quién lo va a atender.",
+              "La decisión ahorró meses de desarrollo y, sobre todo, permitió **validar la hipótesis con un año de datos reales** antes de invertir."
+            ],
+            "outro": [],
+            "svg": "<svg aria-label=\"Flujo: el cliente escanea el QR, se suma a la fila virtual, es atendido, la venta pasa a Tango y los datos alimentan análisis y campañas\" role=\"img\" viewbox=\"0 0 900 230\">\n<defs><marker id=\"ar\" markerheight=\"7\" markerwidth=\"7\" orient=\"auto\" refx=\"9\" refy=\"5\" viewbox=\"0 0 10 10\"><path d=\"M0 0L10 5L0 10z\" fill=\"var(--muted)\"></path></marker></defs>\n<g fill=\"var(--ink)\" font-family=\"Instrument Sans, sans-serif\" font-size=\"14\">\n<text fill=\"var(--muted)\" font-family=\"American Typewriter, Courier Prime, monospace\" font-size=\"11\" letter-spacing=\"1.2\" x=\"10\" y=\"22\">FLUJO OPERATIVO</text>\n<rect fill=\"var(--chip)\" height=\"70\" rx=\"12\" width=\"150\" x=\"10\" y=\"40\"></rect>\n<text font-weight=\"600\" text-anchor=\"middle\" x=\"85\" y=\"70\">Cliente</text><text fill=\"var(--muted)\" font-size=\"12.5\" text-anchor=\"middle\" x=\"85\" y=\"90\">escanea el QR</text>\n<rect fill=\"var(--tang-soft)\" height=\"70\" rx=\"12\" stroke=\"var(--tang)\" width=\"170\" x=\"220\" y=\"40\"></rect>\n<text font-weight=\"600\" text-anchor=\"middle\" x=\"305\" y=\"70\">Fila virtual</text><text fill=\"var(--muted)\" font-size=\"12.5\" text-anchor=\"middle\" x=\"305\" y=\"90\">espera + profesional</text>\n<rect fill=\"var(--chip)\" height=\"70\" rx=\"12\" width=\"150\" x=\"450\" y=\"40\"></rect>\n<text font-weight=\"600\" text-anchor=\"middle\" x=\"525\" y=\"70\">Atención</text><text fill=\"var(--muted)\" font-size=\"12.5\" text-anchor=\"middle\" x=\"525\" y=\"90\">venta registrada</text>\n<rect fill=\"var(--olive-soft)\" height=\"70\" rx=\"12\" stroke=\"var(--olive)\" width=\"200\" x=\"660\" y=\"40\"></rect>\n<text font-weight=\"600\" text-anchor=\"middle\" x=\"760\" y=\"70\">ERP Tango</text><text fill=\"var(--muted)\" font-size=\"12.5\" text-anchor=\"middle\" x=\"760\" y=\"90\">pedido de facturación</text>\n<rect fill=\"var(--butter-soft)\" height=\"56\" rx=\"12\" width=\"380\" x=\"220\" y=\"160\"></rect>\n<text font-weight=\"600\" text-anchor=\"middle\" x=\"410\" y=\"185\">Datos de cada visita</text><text fill=\"var(--muted)\" font-size=\"12.5\" text-anchor=\"middle\" x=\"410\" y=\"204\">recurrencia · tiempos · mix · reviews → campañas</text>\n<g fill=\"none\" marker-end=\"url(#ar)\" stroke=\"var(--muted)\" stroke-width=\"1.5\"><path d=\"M160 75H216\"></path><path d=\"M390 75H446\"></path><path d=\"M600 75H656\"></path><path d=\"M305 110V156\"></path><path d=\"M525 110V156\"></path></g>\n</g>\n</svg>",
+            "caption": "El dato se captura una sola vez, en el momento, y sirve para atender, facturar y analizar."
+          },
+          {
+            "type": "callout",
+            "eyebrow": "Lo que el cliente no sabía que podía tener",
+            "title": "Un proyecto de experiencia terminó siendo inteligencia comercial",
+            "items": [
+              {
+                "title": "Recurrencia",
+                "text": "Solo ~15% de clientes nuevos por mes: la base era mucho más fiel de lo supuesto y el foco pasó a retención."
+              },
+              {
+                "title": "Campañas de regreso",
+                "text": "Contacto al cliente para que vuelva antes de lo previsto, con datos de su última visita."
+              },
+              {
+                "title": "Eficiencia",
+                "text": "Tiempos de atención comparables por depiladora y por local."
+              },
+              {
+                "title": "Demanda",
+                "text": "Horarios y días preferidos, estacionalidad y efecto medible de la publicidad."
+              },
+              {
+                "title": "Producto",
+                "text": "Ticket promedio, mix, categorías y zonas depiladas."
+              },
+              {
+                "title": "Voz del cliente",
+                "text": "Reviews y quejas capturadas al terminar cada atención."
+              }
+            ]
+          },
+          {
+            "type": "gallery",
+            "title": "En imágenes",
+            "intro": [],
+            "outro": [],
+            "columns": 2,
+            "figures": [
+              {
+                "images": [
+                  {
+                    "src": "img/depiexpress-1.jpg",
+                    "alt": "Pantalla que ve el cliente al escanear el QR, con la gente esperando y la espera estimada"
+                  }
+                ],
+                "caption": "Lo que ve el cliente al escanear el QR del local: cuánta gente hay esperando y la espera estimada, antes de sumarse a la lista."
+              },
+              {
+                "images": [
+                  {
+                    "src": "img/depiexpress-2.jpg",
+                    "alt": "Panel de la aplicación con las columnas Esperando, Atendiendo y Terminado"
+                  }
+                ],
+                "caption": "El panel del local en ElQueSigue: esperando, atendiendo y terminado, con servicios, importe y medio de pago de cada visita. Nombres de clientes y del equipo difuminados."
+              }
+            ]
+          },
+          {
+            "type": "cards",
+            "title": "Coordinar a todos los que toca el flujo",
+            "intro": [
+              "Un sistema de fila no se implementa en el mostrador: atraviesa toda la operación. Buena parte del proyecto fue adecuar el trabajo de cada área para que el flujo cerrara de punta a punta."
+            ],
+            "outro": [],
+            "items": [
+              {
+                "title": "Depiladoras",
+                "text": "Nuevo modo de registrar y atender; carga asistida para clientes que no manejan el celular."
+              },
+              {
+                "title": "Coordinación de locales",
+                "text": "Administra en el sistema personal, precios, promociones y servicios."
+              },
+              {
+                "title": "Administración",
+                "text": "Caja, bancos y facturación sobre los datos que quedan en Tango, sin retrabajo."
+              }
+            ]
+          },
+          {
+            "type": "kpis",
+            "title": "La integración que liberó a la caja",
+            "intro": [
+              "La mayor fricción operativa era cargar cada venta a mano en **Tango**. Con el partner Cipax automatizamos el puente: **cada venta registrada en la fila virtual genera un pedido de facturación en Tango con los datos del cliente**."
+            ],
+            "outro": [],
+            "items": [
+              {
+                "value": "1–1,5 h/día",
+                "text": "de carga manual eliminadas por local (estimado: 30 ventas × 2-3 min)"
+              },
+              {
+                "value": "0 cajeras",
+                "text": "en el diseño de las próximas sucursales"
+              },
+              {
+                "value": "1 dato",
+                "text": "cargado una sola vez para atender, facturar y analizar"
+              }
+            ]
+          },
+          {
+            "type": "steps",
+            "title": "De herramienta comprada a producto propio",
+            "intro": [
+              "Con el modelo validado, el paso siguiente fue integrar el **link de pago** en la misma interfaz donde el cliente se registra. La conclusión técnica con Cipax fue construir una aplicación propia con integración nativa. Mi rol pasó de implementador a **gestor del proyecto de desarrollo**:"
+            ],
+            "outro": [
+              "El resultado es **ElQueSigue**, en producción en DepiExpress y comercializado por Cipax como SaaS para otros negocios de atención por orden de llegada, con Nexus como partner."
+            ],
+            "items": [
+              "Relevamiento de las funcionalidades necesarias",
+              "Administración de tiempos y coordinación con el proveedor",
+              "Testing, relevamiento de errores y devolución al equipo de desarrollo",
+              "Configuración de la facturación automática en Tango",
+              "Control del funcionamiento en producción",
+              "Recapacitación del equipo en las nuevas funcionalidades"
+            ]
+          },
+          {
+            "type": "list",
+            "title": "Adopción: el trabajo que no se ve",
+            "intro": [],
+            "outro": [],
+            "items": [
+              "La resistencia inicial fue real: acompañamos en el local enseñando a los clientes a registrarse.",
+              "**Nadie queda afuera:** las depiladoras registran desde la computadora a quien no maneja bien el celular.",
+              "Recapacitación completa del equipo al migrar a la app propia."
+            ]
+          },
+          {
+            "type": "chips",
+            "title": "Qué viene",
+            "intro": [],
+            "outro": [],
+            "items": [
+              "Modo kiosco con tablet fija",
+              "Pantalla de espera en sala",
+              "Expansión comercial del SaaS"
+            ],
+            "note": "DepiExpress y Nexus Consulting integran el mismo holding."
+          }
+        ]
+      }
+    },
+    {
+      "id": "aliar",
+      "visible": true,
+      "tone": "olive",
+      "kind": "Gestión financiera → Línea de servicio",
+      "title": "Gestión Administrativa Aliar",
+      "facts": [
+        {
+          "label": "Cliente",
+          "value": "Aliar · marketing"
+        },
+        {
+          "label": "Período",
+          "value": "2025 – hoy"
+        },
+        {
+          "label": "Escala",
+          "value": "3 socias · 5 clientes hoy"
+        }
+      ],
+      "chips": [
+        "AppSheet",
+        "Google Sheets",
+        "Looker Studio"
+      ],
+      "tldr": "App a medida y tablero financiero para tres socias que no sabían a dónde iba su plata. Dio origen al servicio recurrente de Gestión Administrativa.",
+      "detail": {
+        "chipGroups": [
+          {
+            "label": "",
+            "items": [
+              "AppSheet",
+              "Google Sheets",
+              "Looker Studio",
+              "*Servicio recurrente"
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "label": "Cliente",
+            "value": "Aliar · agencia de marketing de 3 socias"
+          },
+          {
+            "label": "Período",
+            "value": "Julio 2025 – actualidad"
+          },
+          {
+            "label": "Escala",
+            "value": "Varias cajas y cuentas bancarias · hoy el servicio atiende a 5 clientes"
+          },
+          {
+            "label": "Rol",
+            "value": "Diagnóstico, modelo de datos, desarrollo de la app y del tablero; hoy servicio continuo"
+          }
+        ],
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "",
+            "intro": [
+              "Construí una aplicación a medida para registrar cada movimiento desde el celular y un tablero con resultado económico y financiero mes a mes. Con los números a la vista, las socias reorganizaron su negocio, y el proyecto dio origen a una **nueva línea de servicio de la consultora**."
+            ],
+            "outro": [],
+            "lead": "Tres socias que trabajaban y vendían bien, pero **no sabían a dónde se iba la plata**, si el negocio era justo para las tres ni si estaban cobrando bien sus servicios."
+          },
+          {
+            "type": "beforeAfter",
+            "title": "El punto de partida",
+            "intro": [],
+            "outro": [],
+            "before": {
+              "title": "Antes",
+              "items": [
+                "Nada quedaba registrado de forma sistemática.",
+                "Varias cajas y cuentas, usadas para cobrar y pagar indistintamente.",
+                "Plata de la empresa mezclada con la personal de cada socia.",
+                "Tres preguntas sin respuesta: ¿dónde va la plata?, ¿es justo el reparto?, ¿cobramos bien?"
+              ]
+            },
+            "after": {
+              "title": "Después",
+              "items": [
+                "Cada venta, compra, cobro y pago cargado en el momento.",
+                "Saldos por cuenta conciliables contra el banco.",
+                "Cuentas corrientes de clientes y proveedores en tiempo real.",
+                "Estado de resultados y flujo financiero mensual."
+              ]
+            }
+          },
+          {
+            "type": "list",
+            "title": "A medida, no enlatado",
+            "intro": [
+              "La primera idea fue ordenar un Excel. La descarté por algo mejor: **una app propia en el celular**, para registrar cada transacción cuando ocurre y no a fin de mes de memoria. Y a medida a propósito: con los datos justos que el negocio necesita, sin obligar a tres socias sin formación administrativa a adaptarse a un software genérico."
+            ],
+            "outro": [],
+            "items": [
+              "**Ventas, compras, cobros y pagos** cargados desde el celular.",
+              "**Cuentas y cajas:** cada movimiento se asocia a una, y el saldo se actualiza solo y se compara con el real.",
+              "**Movimientos entre cuentas**, para que las transferencias internas no distorsionen nada.",
+              "**Servicios** asociados a cada venta: la base del análisis de rentabilidad.",
+              "**Clientes y proveedores** con cuenta corriente en tiempo real.",
+              "**Vistas resumidas** y acceso directo al tablero desde la app."
+            ]
+          },
+          {
+            "type": "views",
+            "title": "El tablero: tres preguntas, tres vistas",
+            "intro": [],
+            "outro": [],
+            "items": [
+              {
+                "title": "Datos comerciales",
+                "subtitle": "¿Cómo vendemos?",
+                "text": "Monto y cantidad de servicios por mes, rentabilidad por servicio, facturado vs. cobrado, cantidad de ventas y ranking de clientes."
+              },
+              {
+                "title": "Estado de resultados",
+                "subtitle": "¿Cuánto ganamos?",
+                "text": "Meses en columnas; ventas por línea de servicio menos gastos y compras por categoría. El margen neto de cada mes y su evolución."
+              },
+              {
+                "title": "Flujo financiero",
+                "subtitle": "¿Qué pasó con la plata?",
+                "text": "Filtro por período, en total y en detalle: ingresos y egresos, saldos de caja, bancos y cuentas corrientes a inicio y fin de mes, y resultado económico y financiero."
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "eyebrow": "Lo que el cliente no sabía que podía tener",
+            "title": "Las herramientas de gestión de una empresa mucho más grande",
+            "items": [
+              {
+                "title": "Económico vs. financiero",
+                "text": "Entender por qué se puede ganar plata y aun así no tenerla en la cuenta."
+              },
+              {
+                "title": "Rentabilidad por servicio",
+                "text": "La base para saber si están cobrando bien cada trabajo."
+              },
+              {
+                "title": "Facturado vs. cobrado",
+                "text": "Visibilidad de lo que queda pendiente de cobrar."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "title": "Qué cambió en Aliar",
+            "intro": [
+              "Con los números a la vista, las respuestas llegaron solas, y las decisiones también:"
+            ],
+            "outro": [
+              "Pero el cambio más importante fue otro: **se dieron el tiempo y el lugar para analizar su negocio con métricas.**"
+            ],
+            "items": [
+              "**Orden en la plata:** definieron desde qué cuentas se hace cada pago.",
+              "**Reparto justo:** se asignaron un sueldo cada una para equiparar el trabajo.",
+              "**Ganancias separadas** e invertidas en un fondo común de inversión.",
+              "**Estrategia comercial con datos:** menos servicios y foco en los clientes más rentables.",
+              "**Cobranza:** entendieron el peso de una cuenta corriente de clientes tan alta y mejoraron su flujo financiero."
+            ]
+          },
+          {
+            "type": "cards",
+            "title": "De proyecto a línea de negocio",
+            "intro": [
+              "El seguimiento que necesitaba Aliar, y el valor que generaba, mostraron que había un producto. Así nació el servicio de **Gestión Administrativa**, que hoy contratan **5 clientes con abono mensual**, por menos de lo que cuesta sumar un administrativo contable."
+            ],
+            "outro": [
+              "Y un efecto estratégico: al ver el negocio desde adentro, la consultora detecta qué otros servicios necesita cada cliente (impuestos, balances, asesoría comercial, marketing) y los ofrece con fundamento. **El servicio funciona como puerta de entrada.**"
+            ],
+            "items": [
+              {
+                "title": "Control y ajuste",
+                "text": "Revisión de la carga y evolución de la app según cada cliente."
+              },
+              {
+                "title": "Conciliación e informes",
+                "text": "Cuentas bancarias conciliadas e informes detallados periódicos."
+              },
+              {
+                "title": "Asesoramiento",
+                "text": "Mejoras administrativas del negocio, con los datos en la mano."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "camera",
+      "visible": true,
+      "tone": "butter",
+      "kind": "Operación de campo → Datos",
+      "title": "Registro de Picados",
+      "facts": [
+        {
+          "label": "Cliente",
+          "value": "Camera · agro"
+        },
+        {
+          "label": "Período",
+          "value": "2025 – 2027"
+        },
+        {
+          "label": "Escala",
+          "value": "7.361 ha · 6 encargados"
+        }
+      ],
+      "chips": [
+        "Google Forms",
+        "AppSheet",
+        "Looker Studio"
+      ],
+      "tldr": "De planillas en papel a una app de campo con reportes, liquidación de personal y tablero de campaña por equipo, campo y cultivo.",
+      "detail": {
+        "chipGroups": [
+          {
+            "label": "",
+            "items": [
+              "Google Forms",
+              "Google Sheets",
+              "AppSheet",
+              "Looker Studio"
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "label": "Cliente",
+            "value": "Camera · servicios de picado a campo"
+          },
+          {
+            "label": "Período",
+            "value": "Campaña 2025/26 (formularios) y 2026/27 (app)"
+          },
+          {
+            "label": "Escala",
+            "value": "7.361,5 ha · $4.504,7 M facturados por campaña"
+          },
+          {
+            "label": "Equipo",
+            "value": "6 encargados, 4 con equipo propio, y el responsable general"
+          },
+          {
+            "label": "Rol",
+            "value": "Diagnóstico, diseño, desarrollo, migración de datos y tablero"
+          }
+        ],
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "",
+            "intro": [
+              "Lo resolví por escalones: implementamos formularios de google para darle más estructura, después un tablero para analizar los datos, y por último una app para sumar funcionalidades y potencia. Hoy la empresa mide una campaña de **más de 7.000 hectáreas y miles de millones de pesos**, abierta por equipo, campo y cultivo."
+            ],
+            "outro": [],
+            "lead": "Camera picaba miles de hectáreas por campaña, pero sus encargados registraban todo en papel y entregaban las planillas **juntas, al final**: con letra difícil de leer, errores y ningún dato para gestionar."
+          },
+          {
+            "type": "stages",
+            "title": "Tres escalones",
+            "intro": [],
+            "outro": [
+              "Al cerrar la primera campaña el cliente estaba conforme, quería hacer más formularios para la siguiente. Entonces le hice una **propuesta superadora.**"
+            ],
+            "items": [
+              {
+                "eyebrow": "Campaña 2025/26",
+                "title": "Formularios",
+                "items": [
+                  "Un formulario por trabajo: fechas, cliente, campo, cultivo, insumos y personal.",
+                  "Datos ordenados en Google Sheets.",
+                  "Recibo de trabajo en PDF generado desde la planilla."
+                ]
+              },
+              {
+                "eyebrow": "Gestión 2025/26",
+                "title": "Tablero",
+                "items": [
+                  "Toneladas y hectáreas por máquina y equipo.",
+                  "Rendimiento por cultivo.",
+                  "Facturación de la campaña."
+                ]
+              },
+              {
+                "eyebrow": "Campaña 2026/27",
+                "title": "Applicación móvil de bajo código",
+                "items": [
+                  "Los 5 formularios en una sola app.",
+                  "Autocompletado y campos calculados.",
+                  "Roles, historial y datos maestros editables.",
+                  "Roles de usuario y permisos.",
+                  "Cuenta corriente de clientes y proveedores"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "title": "La aplicación",
+            "intro": [],
+            "outro": [],
+            "items": [
+              "Unificación de cinco formularios sueltos que pasan a ser una herramienta coherente.",
+              "Migración de todos los datos del Excel de la campaña anterior.",
+              "Estructura: un modelo de base de datos relacionales.",
+              "Menos tipeo en el campo: valores predefinidos y campos que se calculan solos.",
+              "Historial propio: cada encargado ve lo que cargó antes sin salir de la aplicación.",
+              "Reportes dentro de la app para aquellos datos que se quieran seguir en tiempo real",
+              "Roles: usuarios finales que cargan los datos operativos; y administradores, que editan los datos maestros sin depender de mí."
+            ]
+          },
+          {
+            "type": "gallery",
+            "title": "En imágenes",
+            "intro": [],
+            "outro": [],
+            "columns": 1,
+            "figures": [
+              {
+                "images": [
+                  {
+                    "src": "img/camera-1.jpg",
+                    "alt": "Tabla de picados con campo, cliente, máquina, fechas, cultivo, hectáreas y rendimiento"
+                  }
+                ],
+                "caption": "El registro de picados en la aplicación: campo, máquina, fechas, días efectivos, cultivo, hectáreas y rendimiento por hectárea de cada trabajo. Nombres de clientes difuminados."
+              },
+              {
+                "images": [
+                  {
+                    "src": "img/camera-2.jpg",
+                    "alt": "Tablero de campaña en Looker Studio con totales, rendimiento por equipo y picadora, cultivos y facturación por mes"
+                  }
+                ],
+                "caption": "El tablero de campaña en Looker Studio: totales de la campaña 2025-26 y rendimiento y hectáreas por equipo y por picadora. El tablero completo suma días efectivos, inoculantes, Nombres de los equipos difuminados."
+              },
+              {
+                "images": [
+                  {
+                    "src": "img/camera-3.jpg",
+                    "alt": "Menú de configuración de la app en el celular"
+                  },
+                  {
+                    "src": "img/camera-4.jpg",
+                    "alt": "Listado de picados en el celular"
+                  }
+                ],
+                "caption": "La misma app en el celular del encargado: datos maestros que administra el cliente (clientes, campos, empleados, equipos, máquinas, campañas y acceso al tablero) y el listado de trabajos cargados."
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "eyebrow": "Lo que el cliente no sabía que podía tener",
+            "title": "Pidió registrar trabajos. Se llevó mucho más.",
+            "items": [
+              {
+                "title": "Recibo en PDF",
+                "text": "Un documento profesional hacia sus propios clientes, generado del dato que ya cargaba."
+              },
+              {
+                "title": "Liquidación al personal",
+                "text": "Registro de pagos y saldo pendiente de cada empleado."
+              },
+              {
+                "title": "Rendimiento comparado",
+                "text": "Un equipo contra otro y un cultivo contra otro, en la misma campaña y contra campañas historicas."
+              }
+            ]
+          },
+          {
+            "type": "list",
+            "title": "Qué se viene",
+            "intro": [
+              "El sistema ahora habilita a poder realizar nuevas actividades:"
+            ],
+            "outro": [],
+            "items": [
+              "**Rutas óptimas:** de visita a clientes para precampaña, picado y cosecha, con geolocalización.",
+              "**Costeo de los trabajos:** pasar de solo ver la facturación, a llevar en un mismo lugar los costos, gastos y la rentabilidad por trabajo y por campaña.",
+              "**Otros negocios:** el cliente tiene la intengión de implementar otra aplicación para llevar la administración agrícola y ganadera."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "puente",
+      "visible": true,
+      "tone": "sky",
+      "kind": "Control horario → Costos de obra",
+      "title": "Control Horario Puente",
+      "facts": [
+        {
+          "label": "Cliente",
+          "value": "Constructora Puente"
+        },
+        {
+          "label": "Período",
+          "value": "2026"
+        },
+        {
+          "label": "Escala",
+          "value": "~50 empleados · 5 cuadrillas"
+        }
+      ],
+      "chips": [
+        "AppSheet",
+        "Google Sheets",
+        "API dólar"
+      ],
+      "tldr": "App de horas por cuadrilla que calcula sueldos y muestra el costo de cada obra en pesos y dólares. Libera 4 horas semanales de carga.",
+      "detail": {
+        "chipGroups": [
+          {
+            "label": "",
+            "items": [
+              "AppSheet",
+              "Google Sheets",
+              "API de cotización"
+            ]
+          }
+        ],
+        "summary": [
+          {
+            "label": "Cliente",
+            "value": "Constructora Puente"
+          },
+          {
+            "label": "Período",
+            "value": "Marzo – abril 2026"
+          },
+          {
+            "label": "Escala",
+            "value": "~50 empleados · 5 cuadrillas · varias obras"
+          },
+          {
+            "label": "Rol",
+            "value": "Relevamiento, diseño y desarrollo de la app, integración con la planilla de gastos"
+          }
+        ],
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "",
+            "intro": [
+              "Hoy cada encargado carga en una app, los sueldos se calculan solos y el costo de mano de obra de cada obra se ve **en pesos y en dólares, en el momento**. Se liberaron 4 horas semanales de trabajo administrativo."
+            ],
+            "outro": [],
+            "lead": "Cada quincena, la administración transcribía a mano las horas que **5 encargados de cuadrilla** le pasaban en papel, calculaba los sueldos y cruzaba esos costos con su planilla de gastos."
+          },
+          {
+            "type": "beforeAfter",
+            "title": "El punto de partida",
+            "intro": [],
+            "outro": [],
+            "before": {
+              "title": "Antes",
+              "items": [
+                "Doble carga: papel en obra y transcripción en oficina.",
+                "Sueldo quincenal de ~50 personas calculado a mano.",
+                "Costos de mano de obra desconectados de la planilla de gastos.",
+                "El costo real de una obra se conocía recién al cierre."
+              ]
+            },
+            "after": {
+              "title": "Después",
+              "items": [
+                "El dato se carga una sola vez, en la obra.",
+                "Sueldos calculados automáticamente.",
+                "Resumen de gasto por obra dentro de la planilla existente.",
+                "Consulta histórica y en tiempo real."
+              ]
+            }
+          },
+          {
+            "type": "list",
+            "title": "La aplicación",
+            "intro": [],
+            "outro": [],
+            "items": [
+              "**Carga por cuadrilla:** cada encargado registra las horas diarias de su gente.",
+              "**Privacidad entre cuadrillas:** cada encargado ve solo lo que carga él.",
+              "**Cálculo automático** del sueldo quincenal de cada empleado.",
+              "**Tipo de cambio automático:** la app toma la cotización del día desde una API pública de datos abiertos."
+            ]
+          },
+          {
+            "type": "callout",
+            "eyebrow": "Lo que el cliente no sabía que podía tener",
+            "title": "El control horario se convirtió en control de costos",
+            "items": [
+              {
+                "title": "Costo por obra",
+                "text": "Un resumen de gasto de mano de obra para cada obra, siempre actualizado."
+              },
+              {
+                "title": "En moneda dura",
+                "text": "Pesos y dólares al tipo de cambio del día: presupuestos en dólares, costos en pesos."
+              },
+              {
+                "title": "Sin cambiar de herramienta",
+                "text": "El resumen se inserta en la planilla de gastos que la empresa ya usaba."
+              }
+            ]
+          },
+          {
+            "type": "kpis",
+            "title": "Resultado",
+            "intro": [],
+            "outro": [
+              "Alimenté la planilla de gastos en lugar de reemplazarla, a propósito: **menos cambio para el equipo, más adopción**."
+            ],
+            "items": [
+              {
+                "value": "4 h/semana",
+                "text": "de trabajo administrativo liberadas de pasar datos"
+              },
+              {
+                "value": "~50",
+                "text": "sueldos quincenales calculados sin errores de pasaje"
+              },
+              {
+                "value": "USD",
+                "text": "costo de cada obra visible en moneda dura, en el momento"
+              }
+            ]
+          },
+          {
+            "type": "chips",
+            "title": "Qué viene",
+            "intro": [],
+            "outro": [],
+            "items": [
+              "Gasto real vs. presupuesto por obra",
+              "Desvíos por encargado"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "work": [
+    {
+      "title": "Implementación de software",
+      "paragraphs": [
+        "Poner una herramienta a funcionar de verdad: configurarla para la operación del cliente y capacitar al equipo que la va a usar todos los días.",
+        "**Botta Volpatti** — Asana para el trabajo del equipo. **Questa Inmobiliaria** — Pipedrive. **DepiExpress** — DepiStock, una aplicación propia para el seguimiento de stock en los locales."
+      ],
+      "chips": [
+        "Asana",
+        "Pipedrive",
+        "DepiStock"
+      ]
+    },
+    {
+      "title": "Investigación y selección de aplicaciones",
+      "paragraphs": [
+        "Relevar la necesidad real, comparar las alternativas del mercado y recomendar la que resuelve el problema, sin pagar de más por funciones que nadie va a usar.",
+        "Para resolver una problemática puntual o para ordenar cómo la empresa administra sus datos."
+      ],
+      "chips": []
+    },
+    {
+      "title": "Descripción y mejora de procesos",
+      "paragraphs": [
+        "Escribir cómo se trabaja hoy, repartir responsabilidades y definir puntos de control para mejorar la calidad, reducir errores y hacer más eficiente el trabajo.",
+        "**Andra Urgat** — organización del equipo, responsabilidades y puntos de control de la empresa."
+      ],
+      "chips": []
+    },
+    {
+      "title": "Análisis de datos",
+      "paragraphs": [
+        "Tomar los datos que el negocio ya genera y devolver un panorama que permita decidir.",
+        "**Fiambrería Ilusión** — pantallazo completo de sus ventas: ticket promedio, mix de producto, productos más vendidos, rentabilidades y rotación de stock."
+      ],
+      "chips": []
+    }
+  ],
+  "method": [
+    {
+      "title": "Diagnosticar",
+      "text": "Entender cómo se trabaja hoy y dónde se pierde tiempo, plata o información."
+    },
+    {
+      "title": "Resolver con lo mínimo",
+      "text": "Una herramienta existente, un formulario o una planilla antes que un desarrollo."
+    },
+    {
+      "title": "Validar con datos",
+      "text": "Medir si funciona y descubrir lo que los datos muestran y nadie había pedido."
+    },
+    {
+      "title": "Escalar",
+      "text": "Apps a medida, integraciones y tableros cuando el valor ya está probado."
+    }
+  ],
+  "footer": {
+    "name": "Pablo · Nexus Consulting",
+    "contacts": [
+      {
+        "text": "pa.nexusconsulting@gmail.com",
+        "href": "mailto:pa.nexusconsulting@gmail.com"
+      },
+      {
+        "text": "Santa Fe, Argentina",
+        "href": ""
+      },
+      {
+        "text": "LinkedIn · a completar",
+        "href": ""
+      },
+      {
+        "text": "WhatsApp · a completar",
+        "href": ""
+      }
+    ]
+  }
+}
