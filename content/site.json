@@ -191,8 +191,8 @@
           },
           {
             "type": "callout",
-            "eyebrow": "Lo que el cliente no sabía que podía tener",
-            "title": "Un proyecto de experiencia terminó siendo inteligencia comercial",
+            "eyebrow": "Valor agregado del proyecto",
+            "title": "Un proyecto de mejora de experiencia del usuario que terminó aportando inteligencia comercial y funcionalidades de gestión",
             "items": [
               {
                 "title": "Recurrencia",
@@ -220,33 +220,7 @@
               }
             ]
           },
-          {
-            "type": "gallery",
-            "title": "En imágenes",
-            "intro": [],
-            "outro": [],
-            "columns": 2,
-            "figures": [
-              {
-                "images": [
-                  {
-                    "src": "img/depiexpress-1.jpg",
-                    "alt": "Pantalla que ve el cliente al escanear el QR, con la gente esperando y la espera estimada"
-                  }
-                ],
-                "caption": "Lo que ve el cliente al escanear el QR del local: cuánta gente hay esperando y la espera estimada, antes de sumarse a la lista."
-              },
-              {
-                "images": [
-                  {
-                    "src": "img/depiexpress-2.jpg",
-                    "alt": "Panel de la aplicación con las columnas Esperando, Atendiendo y Terminado"
-                  }
-                ],
-                "caption": "El panel del local en ElQueSigue: esperando, atendiendo y terminado, con servicios, importe y medio de pago de cada visita. Nombres de clientes y del equipo difuminados."
-              }
-            ]
-          },
+          
           {
             "type": "cards",
             "title": "Coordinar a todos los que toca el flujo",
@@ -310,6 +284,33 @@
             ]
           },
           {
+            "type": "gallery",
+            "title": "En imágenes",
+            "intro": [],
+            "outro": [],
+            "columns": 2,
+            "figures": [
+              {
+                "images": [
+                  {
+                    "src": "img/depiexpress-1.jpg",
+                    "alt": "Pantalla que ve el cliente al escanear el QR, con la gente esperando y la espera estimada"
+                  }
+                ],
+                "caption": "Lo que ve el cliente al escanear el QR del local: cuánta gente hay esperando y la espera estimada, antes de sumarse a la lista."
+              },
+              {
+                "images": [
+                  {
+                    "src": "img/depiexpress-2.jpg",
+                    "alt": "Panel de la aplicación con las columnas Esperando, Atendiendo y Terminado"
+                  }
+                ],
+                "caption": "El panel del local en ElQueSigue: esperando, atendiendo y terminado, con servicios, importe y medio de pago de cada visita. Nombres de clientes y del equipo difuminados."
+              }
+            ]
+          },
+          {
             "type": "list",
             "title": "Adopción: el trabajo que no se ve",
             "intro": [],
@@ -322,7 +323,7 @@
           },
           {
             "type": "chips",
-            "title": "Qué viene",
+            "title": "Siguientes pasos",
             "intro": [],
             "outro": [],
             "items": [
@@ -340,11 +341,11 @@
       "visible": true,
       "tone": "olive",
       "kind": "Gestión financiera → Línea de servicio",
-      "title": "Gestión Administrativa Aliar",
+      "title": "Gestión Administrativa",
       "facts": [
         {
-          "label": "Cliente",
-          "value": "Aliar · marketing"
+          "label": "Primer cliente",
+          "value": "Aliar - marketing"
         },
         {
           "label": "Período",
@@ -352,7 +353,7 @@
         },
         {
           "label": "Escala",
-          "value": "3 socias · 5 clientes hoy"
+          "value": "7 clientes hoy"
         }
       ],
       "chips": [
@@ -376,7 +377,7 @@
         "summary": [
           {
             "label": "Cliente",
-            "value": "Aliar · agencia de marketing de 3 socias"
+            "value": "Aliar - agencia de marketing"
           },
           {
             "label": "Período",
@@ -384,11 +385,11 @@
           },
           {
             "label": "Escala",
-            "value": "Varias cajas y cuentas bancarias · hoy el servicio atiende a 5 clientes"
+            "value": "Varios usuarios y múltiples cuentas bancarias - hoy el servicio atiende a 7 clientes"
           },
           {
             "label": "Rol",
-            "value": "Diagnóstico, modelo de datos, desarrollo de la app y del tablero; hoy servicio continuo"
+            "value": "Diagnóstico, modelo de datos, desarrollo de la app y del tablero"
           }
         ],
         "blocks": [
@@ -507,7 +508,7 @@
               "El seguimiento que necesitaba Aliar, y el valor que generaba, mostraron que había un producto. Así nació el servicio de **Gestión Administrativa**, que hoy contratan **5 clientes con abono mensual**, por menos de lo que cuesta sumar un administrativo contable."
             ],
             "outro": [
-              "Y un efecto estratégico: al ver el negocio desde adentro, la consultora detecta qué otros servicios necesita cada cliente (impuestos, balances, asesoría comercial, marketing) y los ofrece con fundamento. **El servicio funciona como puerta de entrada.**"
+              "Al ver el negocio desde adentro, la consultora detecta qué otros servicios necesita cada cliente (impuestos, balances, asesoría comercial, marketing) y los ofrece con dirección y objetivos claros. **El servicio funciona como puerta de entrada para upselling.**"
             ],
             "items": [
               {
@@ -536,7 +537,7 @@
       "facts": [
         {
           "label": "Cliente",
-          "value": "Camera · agro"
+          "value": "Camera - Servicios agrícolas"
         },
         {
           "label": "Período",
@@ -544,7 +545,7 @@
         },
         {
           "label": "Escala",
-          "value": "7.361 ha · 6 encargados"
+          "value": "7.361 ha - 6 encargados"
         }
       ],
       "chips": [
@@ -712,7 +713,7 @@
           },
           {
             "type": "list",
-            "title": "Qué se viene",
+            "title": "Siguientes pasos",
             "intro": [
               "El sistema ahora habilita a poder realizar nuevas actividades:"
             ],
@@ -743,7 +744,7 @@
         },
         {
           "label": "Escala",
-          "value": "~50 empleados · 5 cuadrillas"
+          "value": "~50 empleados - 5 cuadrillas"
         }
       ],
       "chips": [
@@ -774,7 +775,7 @@
           },
           {
             "label": "Escala",
-            "value": "~50 empleados · 5 cuadrillas · varias obras"
+            "value": "~50 empleados - 5 cuadrillas - múltiples obras"
           },
           {
             "label": "Rol",
@@ -897,11 +898,7 @@
         "Poner una herramienta a funcionar de verdad: configurarla para la operación del cliente y capacitar al equipo que la va a usar todos los días.",
         "**Botta Volpatti** — Asana para el trabajo del equipo. **Questa Inmobiliaria** — Pipedrive. **DepiExpress** — DepiStock, una aplicación propia para el seguimiento de stock en los locales."
       ],
-      "chips": [
-        "Asana",
-        "Pipedrive",
-        "DepiStock"
-      ]
+      "chips": []
     },
     {
       "title": "Descripción y mejora de procesos",

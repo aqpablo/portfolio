@@ -76,7 +76,7 @@
     diagram: (b) => `<section>${head(b)}<div class="diagram">${b.svg || ''}</div>${tail(b)}</section>`,
     gallery: (b) => {
       const fig = (f) => {
-        const imgs = (f.images || []).map((i) => `<img src="${esc(i.src)}" alt="${esc(i.alt)}" loading="lazy">`).join('');
+        const imgs = (f.images || []).map((i) => `<button type="button" class="zoom" data-caption="${esc(f.caption)}" aria-label="Ampliar imagen${i.alt ? ': ' + esc(i.alt) : ''}"><img src="${esc(i.src)}" alt="${esc(i.alt)}" loading="lazy"></button>`).join('');
         const body = (f.images || []).length > 1 ? `<div class="phones">${imgs}</div>` : imgs;
         return `<figure>${body}${f.caption ? `<figcaption>${md(f.caption)}</figcaption>` : ''}</figure>`;
       };
@@ -179,7 +179,74 @@
   }
   const close = () => { history.pushState('', document.title, location.pathname + location.search); show(); };
 
+  // En galerías de dos columnas, cada figura toma un ancho proporcional a su imagen,
+  // así todas quedan a la misma altura (sin una gigante y otra diminuta).
+  function sizeGalleries() {
+    document.querySelectorAll('.gallery.two figure').forEach((fig) => {
+      const imgs = [...fig.querySelectorAll('img')];
+      const apply = () => {
+        const ratio = imgs.reduce((t, i) => t + (i.naturalWidth && i.naturalHeight ? i.naturalWidth / i.naturalHeight : 1), 0);
+        fig.style.flexGrow = ratio.toFixed(3);
+      };
+      imgs.forEach((i) => { if (!i.complete) i.addEventListener('load', apply, { once: true }); });
+      apply();
+    });
+  }
+
+  // ---------- visor de imágenes ----------
+  let lbList = [], lbIndex = 0;
+  function lightbox() {
+    let dlg = document.getElementById('lightbox');
+    if (dlg) return dlg;
+    dlg = document.createElement('dialog');
+    dlg.id = 'lightbox';
+    dlg.setAttribute('aria-label', 'Imagen ampliada');
+    dlg.innerHTML = `
+      <div class="lb-inner">
+        <div class="lb-stage"><img alt=""></div>
+        <p class="lb-cap"></p>
+      </div>
+      <button type="button" class="lb-btn lb-close" aria-label="Cerrar">✕</button>
+      <button type="button" class="lb-btn lb-prev" aria-label="Imagen anterior">‹</button>
+      <button type="button" class="lb-btn lb-next" aria-label="Imagen siguiente">›</button>`;
+    document.body.appendChild(dlg);
+    dlg.querySelector('.lb-close').addEventListener('click', () => dlg.close());
+    dlg.querySelector('.lb-prev').addEventListener('click', () => showLb(lbIndex - 1));
+    dlg.querySelector('.lb-next').addEventListener('click', () => showLb(lbIndex + 1));
+    // clic en el fondo cierra
+    dlg.addEventListener('click', (e) => { if (e.target === dlg || e.target.classList.contains('lb-inner') || e.target.classList.contains('lb-stage')) dlg.close(); });
+    dlg.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); showLb(lbIndex - 1); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); showLb(lbIndex + 1); }
+    });
+    return dlg;
+  }
+  function showLb(i) {
+    const dlg = lightbox();
+    lbIndex = (i + lbList.length) % lbList.length;
+    const btn = lbList[lbIndex];
+    const src = btn.querySelector('img');
+    const img = dlg.querySelector('.lb-stage img');
+    const tall = src.naturalWidth && src.naturalHeight / src.naturalWidth > 1.6;
+    dlg.querySelector('.lb-stage').classList.toggle('tall', !!tall);
+    dlg.querySelector('.lb-stage').scrollTop = 0;
+    img.src = src.currentSrc || src.src;
+    img.alt = src.alt;
+    dlg.querySelector('.lb-cap').textContent = btn.dataset.caption || '';
+    const many = lbList.length > 1;
+    dlg.querySelector('.lb-prev').hidden = !many;
+    dlg.querySelector('.lb-next').hidden = !many;
+  }
+  function openLb(btn) {
+    lbList = [...btn.closest('.detail').querySelectorAll('.gallery .zoom')];
+    const dlg = lightbox();
+    showLb(lbList.indexOf(btn));
+    if (!dlg.open) dlg.showModal();
+  }
+
   function bind() {
+    sizeGalleries();
+    document.querySelectorAll('.gallery .zoom').forEach((b) => b.addEventListener('click', () => openLb(b)));
     document.querySelectorAll('.card[data-case]').forEach((c) => c.addEventListener('click', () => { lastCard = c; location.hash = c.dataset.case; }));
     document.querySelectorAll('[data-close]').forEach((b) => b.addEventListener('click', close));
     document.querySelectorAll('.detail').forEach((v) => {
@@ -192,7 +259,7 @@
     });
     show();
   }
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && location.hash) close(); });
+  document.addEventListener('keydown', (e) => { const lb = document.getElementById('lightbox'); if (e.key === 'Escape' && location.hash && !(lb && lb.open)) close(); });
   window.addEventListener('hashchange', show);
 
   // ---------- vista previa desde el editor ----------
@@ -202,6 +269,42 @@
       render(e.data.site);
     }
   });
+
+  // ---------- tema claro / oscuro ----------
+  const THEME_KEY = 'portfolio-theme';
+  const mq = window.matchMedia('(prefers-color-scheme: dark)');
+  const current = () => document.documentElement.dataset.theme || (mq.matches ? 'dark' : 'light');
+  const ICONS = {
+    // se muestra el ícono del tema al que se va a pasar
+    dark: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21 14.5A8.5 8.5 0 0 1 9.5 3a.75.75 0 0 0-.9-.9A10 10 0 1 0 21.9 15.4a.75.75 0 0 0-.9-.9Z"/></svg>',
+    light: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg>',
+  };
+  function paintToggle() {
+    const btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+    const next = current() === 'dark' ? 'light' : 'dark';
+    btn.innerHTML = ICONS[next];
+    btn.setAttribute('aria-label', next === 'dark' ? 'Cambiar a tema oscuro' : 'Cambiar a tema claro');
+    btn.title = btn.getAttribute('aria-label');
+  }
+  function themeToggle() {
+    let btn = document.getElementById('theme-toggle');
+    if (!btn) {
+      btn = document.createElement('button');
+      btn.id = 'theme-toggle'; btn.type = 'button'; btn.className = 'theme-toggle';
+      btn.addEventListener('click', () => {
+        const next = current() === 'dark' ? 'light' : 'dark';
+        document.documentElement.dataset.theme = next;
+        try { localStorage.setItem(THEME_KEY, next); } catch (e) { /* sin almacenamiento */ }
+        paintToggle();
+      });
+      document.body.appendChild(btn);
+    }
+    paintToggle();
+  }
+  try { const saved = localStorage.getItem(THEME_KEY); if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved; } catch (e) { /* nada */ }
+  mq.addEventListener('change', paintToggle);
+  themeToggle();
 
   // ---------- arranque ----------
   if (window.__SITE__) { render(window.__SITE__); return; }
